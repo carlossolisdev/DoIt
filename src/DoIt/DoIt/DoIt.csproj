@@ -135,6 +135,7 @@
       <DependentUpon>DoITContext.tt</DependentUpon>
     </Compile>
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="DoITContext.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -150,6 +151,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DoITContext.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Enums\TransactionStatusEnum.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -157,6 +159,11 @@
     <Compile Include="Service.cs">
       <DependentUpon>DoITContext.tt</DependentUpon>
     </Compile>
+    <Compile Include="Services\AttemptsService.cs" />
+    <Compile Include="Services\CommentsService.cs" />
+    <Compile Include="Services\ServicesService.cs" />
+    <Compile Include="Services\TransactionsServices.cs" />
+    <Compile Include="Services\UsersService.cs" />
     <Compile Include="Transaction.cs">
       <DependentUpon>DoITContext.tt</DependentUpon>
     </Compile>
@@ -320,6 +327,8 @@
     <Content Include="Scripts\popper.js.map" />
     <Content Include="Scripts\popper-utils.min.js.map" />
     <Content Include="Scripts\popper-utils.js.map" />
+    <Content Include="Views\Users\Login.cshtml" />
+    <Content Include="Views\Users\Register.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
