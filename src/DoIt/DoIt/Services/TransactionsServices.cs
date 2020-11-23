@@ -54,7 +54,7 @@ namespace DoIt.Services
             using (var context = new DoItEntities())
             {
                 var transactionToDelete = context.Transactions.FirstOrDefault(x => x.TransactionId == id);
-                context.Services.Remove(transactionToDelete);
+                context.Transactions.Remove(transactionToDelete);
                 await context.SaveChangesAsync();
             }
         }
